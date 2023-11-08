@@ -1,6 +1,6 @@
 #include "Jaguar.h"
 
-Jaguar::Jaguar(std::string name, int distance, std::string engine, bool trunk)
+Jaguar::Jaguar(std::string name,unsigned int distance, std::string engine, bool trunk)
 {
     this->name = name;
     this->distance = distance;

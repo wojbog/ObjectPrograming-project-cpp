@@ -1,5 +1,7 @@
+#ifndef car_H
+#define car_H
 #include<iostream>
-#include "Vehicle.h"
+#include "./../Vehicle.h"
 
 class Car: public Vehicle{
     protected:
@@ -9,3 +11,5 @@ class Car: public Vehicle{
         void openTrunk();
         void closeTrunk();
 };
+
+#endif

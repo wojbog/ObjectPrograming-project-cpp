@@ -1,5 +1,7 @@
 #include<iostream>
-#include "Jaguar.h"
+#include "./cars/Jaguar.h"
+#include "./carriges/Premium.h"
+
 
 
 using namespace std;
@@ -11,4 +13,7 @@ int32_t main()
     veh->addDistance(5);
     veh->toString();
 
+    Vehicle * car = new Premium("premium andrzej", 0, 5);
+
+    car->toString();
 }

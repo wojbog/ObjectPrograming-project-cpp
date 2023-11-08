@@ -1,6 +1,6 @@
 #include "Vehicle.h"
 
-void Vehicle::addDistance(int distance)
+void Vehicle::addDistance(unsigned int distance)
 {
     this->distance+=distance;
 }

@@ -1,11 +1,15 @@
+#ifndef VEHICLE_H
+#define VEHICLE_H
 #include<iostream>
 
 
 class Vehicle {
     protected:
         std::string name;
-        int distance = 0;
+        unsigned int distance = 0;
     public:
         virtual void toString() = 0;
-        void addDistance(int distance);
+        void addDistance(unsigned int distance);
 };
+
+#endif
