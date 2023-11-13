@@ -1,36 +1,17 @@
-#include<iostream>
-#include "./cars/Jaguar.h"
-// #include "./carriges/Premium.h"
 #include "Race.h"
 #include "Vehicle.h"
-
-
-
+#include <iostream>
 
 using namespace std;
 
-int32_t main()
-{
-    Vehicle * veh = new Jaguar("stefan",0,"elektryk",false);
-    // veh->toString();
-    // veh->addDistance(5);
-    // veh->toString();
+int32_t main() {
+  unsigned int NumberOfVehicles;
+  std::cout << "Give number of vehicles: ";
+  std::cin >> NumberOfVehicles;
 
-    // Vehicle * car = new Premium("premium andrzej", 0, 5);
+  std::cout << "\n";
 
-    // car->toString();
-
-
-    Race<Vehicle> race(10);
-    race.printVehicles();
-    race+=veh;
-    race.Run();
-    std::cout<<"------------------\n";
-    race.printVehicles();
-    race-=veh;
-    std::cout<<"------------------\n";
-    race.printVehicles();
-
-
-    
+  Race<Vehicle> race(NumberOfVehicles);
+  race.Run();
+  race.printVehicles();
 }
