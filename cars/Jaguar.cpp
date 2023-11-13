@@ -9,5 +9,5 @@ Jaguar::Jaguar(std::string name,unsigned int distance, std::string engine, bool 
 }
 
 void Jaguar::toString(){
-    std::cout<<"Jaguar with name: "<<name<<"and distance: "<<distance<<"\n";
+    std::cout<<"Jaguar car with name: "<<name<<" and distance: "<<distance<<"\n";
 }

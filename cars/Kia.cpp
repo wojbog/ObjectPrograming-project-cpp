@@ -9,5 +9,5 @@ Kia::Kia(std::string name,unsigned int distance, std::string engine, bool trunk)
 }
 
 void Kia::toString(){
-    std::cout<<"Kia with name: "<<name<<"and distance: "<<distance<<"\n";
+    std::cout<<"Kia car with name: "<<name<<" and distance: "<<distance<<"\n";
 }

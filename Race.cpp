@@ -21,21 +21,24 @@ template <class T> Race<T>::Race(unsigned int NumberOfVehicles) {
   for (int i = 0; i < NumberOfVehicles; ++i) {
     int number = rand() % 5;
     Vehicle *v;
+    std::string name = "id_";
+    char id = i + '0';
+    name+=id;
     switch (number) {
     case 0:
-      v = new Basic("Basic", 0, 2);
+      v = new Basic(name, 0, 2);
       break;
     case 1:
-      v = new Premium("Premium", 0, 6);
+      v = new Premium(name, 0, 6);
       break;
     case 2:
-      v = new Honda("Honda", 0, "disel", false);
+      v = new Honda(name, 0, "disel", false);
       break;
     case 3:
-      v = new Jaguar("Jaguar", 0, "disel", false);
+      v = new Jaguar(name, 0, "disel", false);
       break;
     case 4:
-      v = new Kia("Kia", 0, "disel", false);
+      v = new Kia(name, 0, "disel", false);
       break;
     default:
       v = nullptr;
@@ -48,6 +51,12 @@ template <class T> Race<T>::Race(unsigned int NumberOfVehicles) {
 
     *this += v;
   }
+}
+
+template <> Race<Vehicle>::~Race()
+{
+  NumberOfVehicles = 0;
+  CollectionOfVehicles.erase(CollectionOfVehicles.begin(),CollectionOfVehicles.end());
 }
 
 template Race<Vehicle>::Race(unsigned int);

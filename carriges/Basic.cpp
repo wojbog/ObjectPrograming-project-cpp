@@ -27,5 +27,5 @@ void Basic::addPeople(unsigned int people){
 }
 
 void Basic::toString(){
-    std::cout<<"Basic carrige with name: "<<name<<"and distance: "<<distance<<"\n";
+    std::cout<<"Basic carrige with name: "<<name<<" and distance: "<<distance<<"\n";
 }

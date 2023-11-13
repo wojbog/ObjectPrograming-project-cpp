@@ -29,5 +29,5 @@ void Premium::removePeople(unsigned int numberOfPeople)
 }
 
 void Premium::toString(){
-    std::cout<<"Premium carrige with name: "<<name<<"and distance: "<<distance<<"\n";
+    std::cout<<"Premium carrige with name: "<<name<<" and distance: "<<distance<<"\n";
 }

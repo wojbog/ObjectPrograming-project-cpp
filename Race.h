@@ -11,7 +11,7 @@ class Race {
 
     public:
         Race(unsigned int);
-        // ~Race();
+        ~Race();
         void operator+=(Vehicle *);
         void operator-=(Vehicle *);
         void printVehicles();

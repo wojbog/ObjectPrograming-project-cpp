@@ -9,5 +9,5 @@ Honda::Honda(std::string name,unsigned int distance, std::string engine, bool tr
 }
 
 void Honda::toString(){
-    std::cout<<"Honda with name: "<<name<<"and distance: "<<distance<<"\n";
+    std::cout<<"Honda car with name: "<<name<<" and distance: "<<distance<<"\n";
 }

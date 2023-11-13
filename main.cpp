@@ -23,8 +23,14 @@ int32_t main()
 
     Race<Vehicle> race(10);
     race.printVehicles();
+    race+=veh;
     race.Run();
+    std::cout<<"------------------\n";
     race.printVehicles();
+    race-=veh;
+    std::cout<<"------------------\n";
+    race.printVehicles();
+
 
     
 }
